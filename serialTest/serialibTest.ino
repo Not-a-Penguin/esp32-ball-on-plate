@@ -1,7 +1,3 @@
-// Return the returns the character received on Serial after capitalizing it
-// More details on:
-// https://lucidar.me/en/serialib/cross-plateform-rs232-serial-library/
-
 #include "serialCommEsp.h"
 
 SerialComm serial;
