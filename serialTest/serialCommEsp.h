@@ -8,7 +8,6 @@ class SerialComm{
 
   private:
    
-    StaticJsonDocument<64> docFromSerial;
     StaticJsonDocument<64> docToSerial;
   
     bool jsonUpdated = false;
@@ -20,12 +19,14 @@ class SerialComm{
     
     void getJson();
 
-    void sendJson(int xPos, int yPos);
+    void sendJson(float xPos, float yPos);
     
     void serializeCurrentJson();
     
     bool jsonUpdateCheck();
     void printCurrentJson();
+
+    StaticJsonDocument<128> docFromSerial;
 };
 #endif // !SERIALCOMMESP_H
 
