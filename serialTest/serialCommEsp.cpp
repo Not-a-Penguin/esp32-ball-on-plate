@@ -44,6 +44,8 @@ bool SerialComm::jsonUpdateCheck(){
 };
 
 void SerialComm::printCurrentJson(){
+
+  //Adapt to your json
   Serial.println("Got these from serial:");
 
   Serial.print("Servo 1:"); Serial.println(this->docFromSerial["servo1"].as<int>());
